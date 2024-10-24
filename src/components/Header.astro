@@ -1,0 +1,28 @@
+---
+import Mundo from "../icons/mundo.astro";
+---
+
+<header class=" mx-auto text-white w-full lg:container">
+    <nav class=" lg:mx-24 flex justify-between items-center p-4">
+        <div>
+            <ul class="flex gap-1 tracking-wide items-start">
+                <li class="text-2xl mx-6"> Uber</li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Viaja </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Conduce </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Empresas </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Uber Eats </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Quienes Somos </button></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex gap-4  items-center">
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all lg:inline-flex items-center gap-2 hidden ">
+                    <Mundo/>
+                    ES </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all hidden lg:block"> Ayuda </button></li>
+                <li><button class="hover:bg-zinc-800 rounded-full px-2 py-1 transition-all "> Iniciar Sesión </button></li>
+                <li><button class="bg-white rounded-full px-2 py-[5px] text-black font-semibold"> Registrate </button></li>
+            </ul>
+        </div>
+    </nav>
+</header>
