@@ -1,11 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ViajaUber from "../components/ViajaUber.astro";
-
+import Sugerencias from "../components/Sugerencias.astro";
+import Conduce from "../components/Conduce.astro";
+import Empresas from "../components/Empresas.astro";
+import Apps from '../components/Apps.astro';
 ---
 
-<Layout title="Uber Langing Page">
-	<main>
-		<ViajaUber/>
+<Layout title="Clone Uber Langing Page">
+	<main class="flex flex-col">
+		<section>
+			<ViajaUber />
+		</section>
+		<section class="bg-white">
+			<div class="container mx-auto">
+				<Sugerencias />
+			</div>
+		</section>
+		<section class="bg-white">
+			<Conduce />
+		</section>
+		<section class="bg-white">
+			<Empresas />
+		</section>
+		<section class="bg-gray-100">
+			<div class="container mx-auto">
+				<Apps />
+			</div>
+		</section>
 	</main>
 </Layout>
